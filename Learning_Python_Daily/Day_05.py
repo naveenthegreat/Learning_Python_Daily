@@ -60,4 +60,37 @@ List Methods:
 # print(evens)                                #[0, 2, 4, 6, 8]
 
 
+# #Write a program to store five fruits in a list entered by the user.
+# fruits=[]
+# n1=input("Enter fruits name: ")
+# fruits.append(n1)
+# n2=input("Enter fruits name: ")
+# fruits.append(n2)
+# n3=input("Enter fruits name: ")
+# fruits.append(n3)
+# n4=input("Enter fruits name: ")
+# fruits.append(n4)
+# n5=input("Enter fruits name: ")
+# fruits.append(n5)
 
+# print(fruits)
+
+
+# #Write a program to accept marks of 3 students and display them in a sorted manner.
+
+# marks=[]
+# m1=input("Enter marks: ")
+# marks.append(m1)
+# m2=input("Enter marks: ")
+# marks.append(m2)
+# m3=input("Enter marks: ")
+# marks.append(m3)
+
+# print(marks)
+# marks.sort()
+# print(marks)
+
+#Write a program to sum a list with 4 numbers.
+
+# l=[1,2,3,56]
+# print(sum(l))
