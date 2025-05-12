@@ -24,6 +24,8 @@ while True:
        list.pop(n)
        continue
 
+    
+
     elif num==4:
        break
 

@@ -60,18 +60,20 @@ print(A ^ B)                 # In A or B but not both → {1, 2, 4, 5}   ...Symm
 
 '''
 #Can we have a set with 18 (int) and '18' (str) as a value in it?
-# set={18,'18'}
-# print(set)                             ==>The ans is yes bcoz 18 is int and '18' is string
+ set={18,'18'}
+print(set)                             ==>The ans is yes bcoz 18 is int and '18' is string
 
 # Can you change the values inside a list which is contained in set S?
-# s = {8, 7, 12, "Harry", [1,2]}
-# print(s)                               ==> list can't be include in set
-# print(set.insert[5,2])
+ s = {8, 7, 12, "Harry", [1,2]}
+ print(s)                               ==> list can't be include in set
+ print(set.insert[5,2])
 
 #What will be the length of following set s:
-# s = set()
-# s.add(20)
-# s.add(20.0)
-# s.add('20')
-# print(s)
-# print(len(s))               #The len will be 2 bcoz 1==1.0
+ s = set()
+ s.add(20)
+ s.add(20.0)
+ s.add('20')
+ print(s)
+ print(len(s))               #The len will be 2 bcoz 1==1.0
+
+
