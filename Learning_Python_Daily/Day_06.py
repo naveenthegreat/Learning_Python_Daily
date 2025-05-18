@@ -75,5 +75,3 @@ print(set)                             ==>The ans is yes bcoz 18 is int and '18'
  s.add('20')
  print(s)
  print(len(s))               #The len will be 2 bcoz 1==1.0
-
-
