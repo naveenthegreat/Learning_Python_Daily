@@ -40,6 +40,7 @@ Code         |        Output          |             Meaning
 %m           |         06             |           Month   
 %d           |         05             |           Day
 %A           |      Monday            |       Full Weekday
+%B           |        June            |        Full Month
 %H and %I    |    14 and 02           |      24 hr and 12 hr   
 %p           |        PM              |          AM/PM
 
@@ -72,3 +73,9 @@ Code         |        Output          |             Meaning
  duration = end - start
  print("Took: ",duration )
 '''
+import datetime
+start=datetime.datetime.now()
+end=datetime.datetime.now()
+
+duration = end - start
+print("Took: ",duration )
