@@ -100,19 +100,4 @@
 #10
 # n = int(input("Enter the number: "))
 # for i in range (1,11):
-#     print(f"{n} x {11-i} = {n*(11-i)}")
-
-#mini challenge
-n=input("Enter the password: ")
-lenght=len(n)
-for i in (1,n):
-    if lenght<4:
-        print("💀 Too Weak\n","*"*lenght,end="")
-        break
-    elif lenght>4 or lenght<7:
-        print("🟡 Moderate\n","*"*lenght,end="")
-        break
-    else :
-        print("🟢 Strong\n","*"*lenght)
-
-        
+#     print(f"{n} x {11-i} = {n*(11-i)}")    
