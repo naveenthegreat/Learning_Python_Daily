@@ -19,4 +19,3 @@ Install extra modules with pip:
     "pip install datetime"    
 
 '''
-import Day_09
