@@ -8,7 +8,7 @@ class person:
     
 class employee(person):
     job_title = "DevOps Engineer"
-    salary = 50,00,000                      #50,00,000 ❌ 5000000 or 5_000_000 ✅
+    salary = 50,00,000                      # 50,00,000 ❌ 5000000 or 5_000_000 ✅
     def introduce(self):
         super().introduce()          
     

@@ -13,8 +13,8 @@ class dog(animal):
         print("Dog bark as bow!! bow!!!")
 
 d=dog()
-d.sound()                       #from parent class
-d.bark()                        #from child class
+d.sound()                       # from parent class
+d.bark()                        # from child class
 
 
 2. Types Of Inheritence:
