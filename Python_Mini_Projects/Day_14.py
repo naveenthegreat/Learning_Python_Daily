@@ -1,4 +1,4 @@
-# Mini Challenge:
+# Mini Challenge: Inheritance (Oops 1st Pillar)
 
 class person:
     name = "Naveen"

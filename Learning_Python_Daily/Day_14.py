@@ -1,4 +1,4 @@
-# Inheritence (Oops 1st Pillar)
+# Inheritance (Oops 1st Pillar)
 '''
 1. What is Inheritence?
     Inheritence means a class(child) can use code of another class(parents).
