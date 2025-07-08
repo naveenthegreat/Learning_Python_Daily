@@ -1,4 +1,4 @@
-# Buttons + Events + Command Functions 
+# Buttons + Events + Command Functions
 '''
 1. What is Command Functions
     Command Function is a python function that runs when user clicks the button. 
