@@ -1,0 +1,43 @@
+import json
+from datetime import datetime, timedelta
+import os
+
+def calculate_streak():
+    if not os.path.exists("checkin_data.json"):
+        return 0, "No data"
+
+    with open("checkin_data.json") as f:
+        data = json.load(f)
+
+    dates = [datetime.strptime(d, "%Y-%m-%d").date() for d in data.keys()]
+    dates.sort()
+
+    if not dates or dates[-1] != datetime.today().date():
+        return 0, "No check-in today"
+
+    # Start streak from today
+    streak = 1
+    for i in range(len(dates)-1, 0, -1):
+        if dates[i] - dates[i-1] == timedelta(days=1):
+            streak += 1
+        else:
+            break
+
+    return streak, get_level(streak)
+
+def get_level(streak):
+    if streak < 5:
+        return "Beginner 🟢"
+    elif streak < 10:
+        return "Bronze 🔵"
+    elif streak < 25:
+        return "Silver 🟣"
+    elif streak < 50:
+        return "Gold 🔴"
+    else:
+        return "Ruby Master 🟡"
+
+# Test it
+s, level = calculate_streak()
+print("Current Streak:", s)
+print("Your Level:", level)
