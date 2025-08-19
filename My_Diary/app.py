@@ -9,7 +9,7 @@ import json
 # Window Setup
 window = tk.Tk()
 window.title("📝 My Diary")
-window.geometry("700x600")
+window.geometry("700x550")
 window.config(bg="#19170b")
 
 # Labels
