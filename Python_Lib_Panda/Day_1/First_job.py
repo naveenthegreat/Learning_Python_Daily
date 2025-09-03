@@ -12,9 +12,18 @@ print(df)
 ##Lets Save it in 3 different types of file:
 # df.to_csv("output.csv",index=False)     #index=false = file will not include extra column "0,1,2"
 # df.to_excel("output.xlsx",index=False)
-# df.to_json("output.json",index=False)
+df.to_json("output.json",index=False)
 
 ##Let Read the file into a DataFrame
 # df=pd.read_csv("output.csv", encoding="latin1")  #if u get UnicodeDecodeError then use it also ="utf-8"
 # print(df)
 ##Same for other types of files
+
+
+## To view Rows in a dataset:
+df=pd.read_json("output.json")
+# print(df.head(2))           # display first 2 rows
+# print(df.tail(2))           # display last 2 rows
+print(df.info())              # column types + null values
+print(df.shape)               # (rows,columns)
+print(df.describe())          # statistics (mean, std, min, max)       
