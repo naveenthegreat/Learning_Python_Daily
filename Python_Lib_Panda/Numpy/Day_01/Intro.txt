@@ -1,0 +1,35 @@
+# Numpy (Numerical Python) :
+
+1. What is Numpy?
+    It is a powerful python library that helps us perform fast and efficient
+    numerical computations using arrays.
+
+    * It provides a special data structure called "ndarray" (n-dimensional array)
+      which is like a grid of numbers arranged in rows and columns.
+
+
+2. Where it is used?
+    It is used in many fields where large-scale numerical data needs to be handled, such as :
+
+    - Data Science : for handling large datasets
+    - ML & AI : for matrix operations, vectorized calculations
+    - Image Processing : images are represented as arrays of pixel values
+    - Scientific Computing : solving math-heavy problems like simulations
+    - Finance - time-series data, statistical calculations
+    
+
+3. Why it is used?
+    - Speed : it performs calculations faster than normal python lists
+    - Memory efficiency : uses less memory compared to python lists
+    - Multi-dimensional Data Handling : supports multi-dimensional arrays (1D,2D,3D, etc) to store and manipulate data easily
+
+
+4. For what it is used?
+    - Storing data in arrays(structured grid of numbers)
+    - Performing mathematical operations like addition, subtraction, multiplication,
+      dot product
+    - Statistical computations(mean, median, standard deviation)
+    - Matrix operations(important in machine learning algorithms)
+    - Data reshaping, filtering, selecting elements
+    - Generating random numbers for simulations
+
