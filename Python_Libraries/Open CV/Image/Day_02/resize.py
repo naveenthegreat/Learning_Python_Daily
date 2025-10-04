@@ -6,8 +6,6 @@ if image is not None:
     print("Image Loaded")
     resized = cv2.resize(image,(400,400))
     cv2.imshow("Original_Photo",image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
     cv2.imshow("Resized_photo",resized)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
