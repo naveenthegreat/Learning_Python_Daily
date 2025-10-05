@@ -1,0 +1,47 @@
+# Read the image then perform other operations on it
+image = cv2.imwrite(r" <image_to_read> ")
+
+# To display image
+cv2.imshow(" <add_title_to_image> ",image)        ...open the window
+cv2.waitKey(0)                                  ...wait for key
+cv2.destroyAllWindows()                         ...close the window
+
+# To read the dimensions of the image
+h,w,c = image.shape
+print(f"Height:{h}\n Width:{w}\n Color:{c}")
+
+# To Change the color 
+cv2.cvtColor( <image_to_color> , cv2.COLOR_<color_u_want>)
+
+# To Crop 
+crop = image[start Y:end Y , start X:end X]
+
+# To Rotate the image
+M = cv2.getRotationMatrix2D( center, angle, scale)
+Rotated_image = cv2.warpAffine( <image>, M, (width,height) )        ...width=w//2, height=h//2
+
+# To Flip the image
+flipped_horizontally = cv2.flip(image,1)        
+flipped_vertically = cv2.flip(image,0)          
+flipped_both = cv2.flip(image,-1)              
+
+# To Resize the image
+cv2.resize( <image>, (width,height) )
+
+# To Draw Line
+cv2.line( <image>, pt1, pt2, color, thickness)
+where,
+        pt1 = (x1,y1)
+        pt2 = (x2,y2)
+        color = (0-255,0-255,0-255)  ...(B,G,R)
+        thickness = 5
+
+# To Draw Rectangle
+ok = cv2.rectangle( <image>,pt1,pt2,color,thickness)   
+
+# To Draw Circle
+cv2.line(image,center,radius,color,thickness)       ...center=(x,y), radius=X
+
+# To Add_Text in the image
+cv2.putText( <image>, "_Text_to_insert_", origin=(x,y), cv2.FONT_,
+fontscale=4,color,thickness)
