@@ -1,10 +1,10 @@
 # Read the image then perform other operations on it
-image = cv2.imwrite(r" <image_to_read> ")
+image = cv2.imread(r" <image_to_read> ")
 
 # To display image
 cv2.imshow(" <add_title_to_image> ",image)          ...open the window
 cv2.waitKey(0)                                      ...wait for key
-cv2.destroyAllWindows()                             ...close the window
+cv2.destroyAllWindows()                              ...close the window
 
 # To read the dimensions of the image
 h,w,c = image.shape
