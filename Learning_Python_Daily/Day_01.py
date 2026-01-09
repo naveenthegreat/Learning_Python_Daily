@@ -1,6 +1,6 @@
 # Using f-strings as formated output
-name="Naveen"     #'name' is a variable that stores the value 'Naveen'
-age=25            # variables can store multiple values and whatever data types such as int,bool,float,string 
+name= "Naveen"     #'name' is a variable that stores the value 'Naveen'
+age = 25            # variables can store multiple values and whatever data types such as int,bool,float,string 
 print(f"My name is {name} and my age is {age}")
 
 #let's create a simple project: "User Profile"
